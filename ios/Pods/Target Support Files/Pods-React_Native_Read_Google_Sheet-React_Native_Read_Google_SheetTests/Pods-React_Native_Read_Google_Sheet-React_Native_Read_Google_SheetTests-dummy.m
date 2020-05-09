@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_React_Native_Read_Google_Sheet_React_Native_Read_Google_SheetTests : NSObject
+@end
+@implementation PodsDummy_Pods_React_Native_Read_Google_Sheet_React_Native_Read_Google_SheetTests
+@end
