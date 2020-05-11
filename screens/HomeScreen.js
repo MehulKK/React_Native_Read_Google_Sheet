@@ -105,7 +105,7 @@ export default class HomeScreen extends React.Component {
                         <TouchableOpacity
                             onPress={() => {
                                 this.props.navigation.navigate('Detail', {
-                                   data: this.state.dataSource[index]
+                                    data: this.state.dataSource[index]
                                 });
                             }}>
                             <View style={{ flex: 1, flexDirection: 'row' }}>
@@ -122,9 +122,20 @@ export default class HomeScreen extends React.Component {
                                 />
 
                                 <View marginStart={10} status={{ flex: 1, flexDirection: 'column' }}>
-                                    <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: 'bold' }}> {"Name :" + item.name} </Text>
-                                    <Text> {"Birthdate :" + item.birthday} </Text>
-                                    <Text> {"Occupation :" + item.occupation} </Text>
+                                    <Text>
+                                        <Text style={{ fontWeight: 'bold' }}>Name : </Text>
+                                        <Text>{item.name}</Text>
+                                    </Text>
+
+                                    <Text>
+                                        <Text style={{ fontWeight: 'bold' }}>Birthdate : </Text>
+                                        <Text>{item.birthday}</Text>
+                                    </Text>
+
+                                    <Text>
+                                        <Text style={{ fontWeight: 'bold' }}>Occupation : </Text>
+                                        <Text>{item.occupation}</Text>
+                                    </Text>
                                 </View>
                             </View>
 
