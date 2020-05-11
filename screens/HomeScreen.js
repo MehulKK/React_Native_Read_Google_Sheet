@@ -95,46 +95,43 @@ export default class HomeScreen extends React.Component {
         }
         return (
             <View styles={styles.container}>
-                <Button
-                    title="Add some friends"
-                    onPress={() =>
-                        //this.props.navigation.navigate('Detail')
-                        alert(this.state.responseList.length)
-                    }
-                />
-
                 <FlatList
                     style={{ marginBottom: 50, marginTop: 10 }}
                     data={this.state.dataSource}
 
                     renderItem={({ item, index }) => <View style={{
-                        width: Dimensions.get('window').width / 2 - 10,
-                        height: Dimensions.get('window').width / 2 + 10, marginStart: 5, marginRight: 5, marginBottom: 5
+                        padding: 5
                     }}>
                         <TouchableOpacity
                             onPress={() => {
-                                //this.props.navigation.navigate('Details', {
-                                 //   data: this.state.dataSource[index]
-                                //});
+                                this.props.navigation.navigate('Detail', {
+                                   data: this.state.dataSource[index]
+                                });
                             }}>
-                            <FastImage
-                                style={{
-                                    borderRadius: 10,
-                                    width: Dimensions.get('window').width / 2 - 10,
-                                    height: Dimensions.get('window').width / 2 - 20,
-                                    alignItems: 'center'
-                                }}
-                                source={{ uri: item.img, priority: FastImage.priority.normal }}
-                                resizeMode={FastImage.resizeMode.cover}
-                                borderRadius={10}
+                            <View style={{ flex: 1, flexDirection: 'row' }}>
+                                <FastImage
+                                    style={{
+                                        borderRadius: 10,
+                                        width: 60,
+                                        height: 60,
+                                        alignItems: 'center'
+                                    }}
+                                    source={{ uri: item.img, priority: FastImage.priority.normal }}
+                                    resizeMode={FastImage.resizeMode.cover}
+                                    borderRadius={10}
+                                />
 
-                            />
+                                <View marginStart={10} status={{ flex: 1, flexDirection: 'column' }}>
+                                    <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: 'bold' }}> {"Name :" + item.name} </Text>
+                                    <Text> {"Birthdate :" + item.birthday} </Text>
+                                    <Text> {"Occupation :" + item.occupation} </Text>
+                                </View>
+                            </View>
 
-                            <Text numberOfLines={1} ellipsizeMode='tail' style={{ marginTop: 5, fontSize: 16, fontWeight: 'bold' }}> {item.nickname} </Text>
+
+
                         </TouchableOpacity>
                     </View>}
-
-                    numColumns={2}
 
                 />
             </View>
