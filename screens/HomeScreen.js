@@ -26,6 +26,7 @@ export default class HomeScreen extends React.Component {
     }
 
     componentDidMount() {
+        console.disableYellowBox = true;
         this.onFetchData()
     }
 
