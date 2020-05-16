@@ -2,8 +2,9 @@
 
 Read Google Spread Sheet display and bind in list
 
-![alt text](image/demo.gif)
-
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/demo.gif">
+</p>
 
 ## Section 1
 Creating a Google Sheet
