@@ -15,25 +15,32 @@ Go to [Google Sheets](https://docs.google.com/spreadsheets/u/0/).
 #### Step 2 : 
 Create a new spreadsheet
 
-![alt text](image/create.png)
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/create.png">
+</p>
 
 ## Section 2: Publishing your Google Sheets to the web
 
 ####  Step 1 
 Click **File > Publish to the web…**
 
-![alt text](image/file.png)
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/file.png">
+</p>
 
 #### Step 2
 Click **Publish**, then **OK**
 
-![alt text](image/publish_web_0.png)
-
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/publish_web_0.png">
+</p>
 
 #### Step 3
 No need to do anything here
 
-![alt text](image/publish_web.png)
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/publish_web.png">
+</p>
 
 
 ## Section 3: Using your Google Sheets as JSON endpoint
@@ -46,9 +53,9 @@ No need to do anything here
 
 Go to your opened Google Sheets and check the address bar
 
-![Google sheet URl](image/address_bar.png)
-
-![Google Sheets code](image/address_bar_1.png)
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/address_bar_1.png">
+</p>
 
 
 #### Step 3:
@@ -65,4 +72,6 @@ Retrieve JSON URL
 
 ***[https://spreadsheets.google.com/feeds/list/1ikcdDRhklW2mzjooRlyZbQDf70CAWUTN3DItUQGLaSY/1/public/values?alt=json](https://spreadsheets.google.com/feeds/list/1ikcdDRhklW2mzjooRlyZbQDf70CAWUTN3DItUQGLaSY/1/public/values?alt=json)***
 
-![Output JSON](image/address_bar_1.png)
+<p align="center">
+  <img src="https://github.com/MehulKK/React_Native_Read_Google_Sheet/blob/master/image/json.png">
+</p>
